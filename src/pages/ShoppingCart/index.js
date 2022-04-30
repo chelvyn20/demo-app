@@ -1,9 +1,8 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import { CardProduct } from "../../components/CardProduct";
 import {
   selectCartItems,
-  selectCartTotalPrice
+  selectCartTotalPrice,
 } from "../../redux/cartSlice";
 
 export const ShoppingCart = () => {
@@ -16,7 +15,7 @@ export const ShoppingCart = () => {
       <h4>Total Price: ${totalPrice.toFixed(2)}</h4>
       {cart && cart.length > 0 ? (
         <ul className="collection">
-          {cart.map(item => (
+          {cart.map((item) => (
             <CardProduct
               key={item.product.id}
               product={item.product}

@@ -1,7 +1,6 @@
-import React from "react";
 import "./index.css";
 
-export const CardProduct = props => {
+export const CardProduct = (props) => {
   const {
     product = {
       id: 1,
@@ -11,12 +10,12 @@ export const CardProduct = props => {
       image: "",
       rating: {
         rate: "5.0",
-        count: "100"
-      }
+        count: "100",
+      },
     },
     quantity = "0",
     handleAddToCart = null,
-    handleRemoveToCart = null
+    handleRemoveToCart = null,
   } = props;
 
   return (

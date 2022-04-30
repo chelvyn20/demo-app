@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export function ClockFunc() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -10,7 +10,7 @@ export function ClockFunc() {
 
   useEffect(() => {
     console.log(
-        "clock componentDidMount / componentDidUpdate (time): " + time
+      "clock componentDidMount / componentDidUpdate (time): " + time
     );
     const timerID = setInterval(() => tick(), 1000);
 

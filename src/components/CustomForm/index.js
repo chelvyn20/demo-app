@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { SubmitBtn } from "../SubmitBtn";
 
 export class CustomForm extends Component {

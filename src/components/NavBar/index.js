@@ -41,6 +41,9 @@ export const NavBar = () => {
                 <li>
                   <Link to="/shopping-cart">Shopping Cart</Link>
                 </li>
+                <li>
+                  <Link to="/user">User</Link>
+                </li>
               </ul>
             </div>
           </div>

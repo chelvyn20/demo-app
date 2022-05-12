@@ -24,7 +24,7 @@ export const CardProduct = (props) => {
       className="collection-item-avatar left-align item-card">
       <div className="row valign-wrapper">
         <div className="col s2">
-          <img src={product.image} className="circle item-image" />
+          <img src={product.image} alt="" className="circle item-image" />
         </div>
         <div className="col s10">
           <div className="row">

@@ -19,6 +19,9 @@ export const SideNav = () => {
         <li className="sidenav-close">
           <Link to="/shopping-cart">Shopping Cart</Link>
         </li>
+        <li className="sidenav-close">
+          <Link to="/user">User</Link>
+        </li>
       </ul>
     </div>
   );

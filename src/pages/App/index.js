@@ -4,7 +4,10 @@ import { NavBar } from "../../components/NavBar";
 import { CodeLab } from "../CodeLab";
 import { Home } from "../Home";
 import { ShoppingCart } from "../ShoppingCart";
+import { User } from "../User";
+import { DetailUser } from "../User/DetailUser";
 import { Marketplace } from "./../Marketplace";
+import { AddUser } from "./../User/AddUser";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route exact path="/loan-form" element={<LoanForm />} />
         <Route exact path="/marketplace" element={<Marketplace />} />
         <Route exact path="/shopping-cart" element={<ShoppingCart />} />
+        <Route exact path="/user" element={<User />} />
+        <Route exact path="/addUser" element={<AddUser />} />
+        <Route exact path="/detailUser" element={<DetailUser />} />
       </Routes>
     </BrowserRouter>
   );
